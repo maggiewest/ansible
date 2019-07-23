@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Create an S3 bucket
+    s3: aws_access_key=<Access Key> aws_secret_key=<Secret Key> bucket=ansiblevnbucket object=/development mode=create permission=public-read region=us-east-2

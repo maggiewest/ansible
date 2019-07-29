@@ -8,9 +8,8 @@ node('master') {
 
 
     stage("Run Ansible Playbook") {
-
         
-            withCredentials([file(credentialsId: 'd04ef468-12f7-417e-bfc0-c346c3d339c9', variable: 'mySecretKey')]){
+            withCredentials([file(credentialsId: 'f7412f0d-c369-4122-beb0-7aa1a49e4527', variable: 'mySecretKey')]){
             sh "pwd"
             sh "pwd"
             sh "ls"

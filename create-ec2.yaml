@@ -62,8 +62,9 @@
           Owner: maggie
           #version number or jenkins number put here.  jenkins number or some ways to keep track of deployment.  do another ec2 gather facts.
           PurPose: provision ec2 then connect and do stuff
+    
     - name: see whats the file like.  i want to store the instances.id somewhere for later use.  
-    command: pwd
+      command: pwd
 
     - name: Stop or terminate myserver instance
       local_action:

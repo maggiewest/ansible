@@ -2,7 +2,7 @@
 - name: creating EC2 with ansible
   hosts: localhost
   connection: local
-  #gather_facts: False
+  gather_facts: false
   tags: provisioning
 
   vars:

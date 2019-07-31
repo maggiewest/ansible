@@ -2,7 +2,6 @@
 - name: creating EC2 with ansible
   hosts: all
   become: yes
-  gather_facts: False
 
   vars:
     instance_type: t2.micro

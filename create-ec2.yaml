@@ -1,14 +1,12 @@
 ---
 - name: creating EC2 with ansible
-  hosts: localhost
-  connection: local
+  hosts: aws
   gather_facts: false
-  tags: provisioning
 
   vars:
     instance_type: t2.micro
     security_group: launch-wizard-1
-    image: ami-0d8f6eb4f641ef691
+    image: ami-095fb84b7c6d4aa2e
     region: us-east-2
     keypair: ohio
     count: 1

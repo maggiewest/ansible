@@ -1,6 +1,8 @@
 ---
 - name: creating EC2 with ansible
-  hosts: aws
+  hosts: all
+  become: yes
+  become_method: sudo
   gather_facts: False
 
   vars:

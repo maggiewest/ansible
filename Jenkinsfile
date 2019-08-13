@@ -27,7 +27,7 @@ node('master') {
             //sh "pip install boto3"
             //sh "pip install boto3 --ignore-installed ${six}"
             //sh "vi ~/.boto"
-            sh "ansible-playbook create-ec2.yaml -i inventory.txt"
+            sh "ansible-playbook create-ec2.yaml -i hosts"
         }
             
           

@@ -1,8 +1,6 @@
 ---
-- name: creating EC2 with ansible
-  hosts: all
-  become: yes
-
+- hosts: jumpserver
+  remote_user: ec2-user
   vars:
     instance_type: t2.micro
     security_group: launch-wizard-1
